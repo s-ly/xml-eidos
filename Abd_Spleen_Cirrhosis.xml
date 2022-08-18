@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<object name="Abd_Spleen_Cirrhosis">
+	<resources>
+		<resource name="Abd_Spleen_Cirrhosis"
+		type="mesh"
+		path="resources/models/Spleen/Abd_Spleen_Cirrhosis.FBX" />
+	</resources>
+	<inner_geometry>
+		<geometry name="inner_wall" mesh_name="Abd_Spleen_Cirrhosis">
+			<smooth_group id="2" />
+		</geometry>
+	</inner_geometry>
+	<outer_geometry>
+		<geometry name="outer_wall" mesh_name="Abd_Spleen_Cirrhosis">
+			<smooth_group id="1" />
+		</geometry>
+	</outer_geometry>
+	<inner_cap_geometry />
+	<outer_cap_geometry />
+	<morph_data fps="0.000000" framesCount="0" />
+	<effects>
+		<effect name="filling_uzi">
+			<effect_data wall_texture=""
+			wall_UV_channel_number="0"
+			wall_color="0.458333, 0.458333, 0.458333, 1"
+			fill_texture="resources/textures/Thyroid.png"
+			fill_UV_channel_number="0"
+			fill_color="0.225, 0.225, 0.225, 1" />
+		</effect>
+		<effect name="filling_view">
+			<effect_data inner_color="0.419608, 0.329412, 0.454902, 1"
+			inner_texture=""
+			inner_UV_channel_number="1"
+			outer_color="0.419608, 0.329412, 0.454902, 1"
+			outer_texture=""
+			outer_UV_channel_number="1"
+			wall_color="0.419608, 0.329412, 0.454902, 1"
+			wall_texture=""
+			wall_UV_channel_number="1" />
+		</effect>
+		<effect name="echo_shadow">
+			<effect_data wallValue="0.000000" fillValue="0.000000" />
+		</effect>
+		<effect name="diffuse_border">
+			<effect_data size="1.097600" coef="0.001489" bIsOldDiffuse="true" />
+		</effect>
+		<effect name="radial_diffuse">
+			<effect_data delta_fi="0.001115" radial_iteration_count="9.452001" />
+		</effect>
+		<effect name="wall_noise">
+			<effect_data contrast_factor="8.000000"
+			is_wall_blurring="true"
+			is_fill_blurring="true"
+			sobel_box_width="10"
+			sobel_box_height="10"
+			sobel_texture_step="0.003000"
+			noise_delta_fi="0.000300"
+			noise_resize_factor="0.500000" />
+		</effect>
+		<effect name="echo">
+			<effect_data Echo_Data_Fill=""
+			FILL_Reflection="0.241700"
+			FILL_Absorption="0.500000"
+			FILL_Transmition="0.500000"
+			FILL_Strength="0.000000"
+			Echo_Data_Wall=""
+			WALL_Reflection="0.338889"
+			WALL_Absorption="0.552800"
+			WALL_Transmition="0.500000"
+			WALL_Strength="0.055600"
+			Noise_Data_Fill=""
+			FILL_Noise_a="0.372200"
+			FILL_Noise_b="0.438889"
+			FILL_Noise_c="0.416667"
+			FILL_Noise_d="0.000000"
+			Noise_Data_Wall=""
+			WALL_Noise_a="0.816667"
+			WALL_Noise_b="0.530556"
+			WALL_Noise_c="0.427778"
+			WALL_Noise_d="0.000000"
+			Pressure_Data=""
+			Density="0.000000" />
+		</effect>
+	</effects>
+</object>
